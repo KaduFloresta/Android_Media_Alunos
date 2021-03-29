@@ -13,19 +13,19 @@ public class DataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data);
 
-//        Bundle args = getIntent().getExtras();
-//        nome = args.getString("nome");
-//        dtNascimento = args.getString("nascimento");
-//        endereco = args.getString("endereco");
+        Bundle args = getIntent().getExtras();
+        nome = args.getString("nome");
+        dtNascimento = args.getString("nascimento");
+        endereco = args.getString("endereco");
 //        resultado = args.getString("resultado");
-//
-//        TextView dataNome = (TextView) findViewById(R.id.dataNome);
-//        dataNome.setText("Nome: " + nome);
-//        TextView dataDtNascimento = (TextView) findViewById(R.id.dataDtNascimento);
-//        dataDtNascimento.setText("Data Nascimento: " + dtNascimento);
-//        TextView dadosEndereco = (TextView) findViewById(R.id.dadosEndereco);
-//        dadosEndereco.setText("Endereço: " + endereco);
-//        TextView dataResultado = (TextView) findViewById(R.id.dataResultado1);
+
+        TextView dataNome = (TextView) findViewById(R.id.dataNome);
+        dataNome.setText("Nome: " + nome);
+        TextView dataDtNascimento = (TextView) findViewById(R.id.dataDtNascimento);
+        dataDtNascimento.setText("Data Nascimento: " + dtNascimento);
+        TextView dataEndereco = (TextView) findViewById(R.id.dataEndereco);
+        dataEndereco.setText("Endereço: " + endereco);
+//        TextView dataResultado = (TextView) findViewById(R.id.dataResultado);
 //        dataResultado.setText(resultado);
     }
 }
