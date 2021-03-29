@@ -3,7 +3,6 @@ package com.example.android_media_alunos;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class DataActivity extends AppCompatActivity {
@@ -14,19 +13,19 @@ public class DataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data);
 
-        Bundle args = getIntent().getExtras();
-        nome = args.getString("nome");
-        dtNascimento = args.getString("dtNascimento");
-        endereco = args.getString("endereco");
-        resultado = args.getString("resultado");
-
-        TextView txtInfoNome = (TextView) findViewById(R.id.txtInfoNome);
-        txtInfoNome.setText("Nome: " + nome);
-        TextView txtInfoDtNascimento = (TextView) findViewById(R.id.txtInfoDtNascimento);
-        txtInfoDtNascimento.setText("Data de Nascimento: " + dtNascimento);
-        TextView txtInfoEndereco = (TextView) findViewById(R.id.txtInfoEndereco);
-        txtInfoEndereco.setText("Endereço: " + endereco);
-        TextView txtInfoResultado = (TextView) findViewById(R.id.txtInfoResultado);
-        txtInfoResultado.setText("Média: " + resultado);
+//        Bundle args = getIntent().getExtras();
+//        nome = args.getString("nome");
+//        dtNascimento = args.getString("nascimento");
+//        endereco = args.getString("endereco");
+//        resultado = args.getString("resultado");
+//
+//        TextView dataNome = (TextView) findViewById(R.id.dataNome);
+//        dataNome.setText("Nome: " + nome);
+//        TextView dataDtNascimento = (TextView) findViewById(R.id.dataDtNascimento);
+//        dataDtNascimento.setText("Data Nascimento: " + dtNascimento);
+//        TextView dadosEndereco = (TextView) findViewById(R.id.dadosEndereco);
+//        dadosEndereco.setText("Endereço: " + endereco);
+//        TextView dataResultado = (TextView) findViewById(R.id.dataResultado1);
+//        dataResultado.setText(resultado);
     }
 }

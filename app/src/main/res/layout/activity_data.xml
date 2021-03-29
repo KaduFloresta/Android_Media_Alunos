@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtInfoNome"
+        android:id="@+id/dataNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
@@ -37,7 +37,7 @@
         android:inputType="text" />
 
     <TextView
-        android:id="@+id/txtInfoDtNascimento"
+        android:id="@+id/dataDtNascimento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
@@ -55,7 +55,7 @@
         android:text="Endereço" />
 
     <TextView
-        android:id="@+id/txtInfoEndereco"
+        android:id="@+id/dataEndereco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
@@ -64,16 +64,16 @@
 
     <TextView
         android:id="@+id/dadosNotas"
-        android:layout_marginTop="5dp"
-        android:layout_gravity="center"
-        android:textSize="20sp"
-        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CÁLCULO" />
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Média do Aluno"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/txtInfoResultado"
+        android:id="@+id/dataResultado1"
         android:layout_width="120dp"
         android:layout_marginTop="5dp"
         android:layout_gravity="center"

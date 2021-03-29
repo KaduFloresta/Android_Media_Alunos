@@ -44,11 +44,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:ems="10"
-        android:hint="Nome"
+        android:hint="Nome Completo"
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/inputDtNascimento"
+        android:id="@+id/inputDtNasc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
@@ -97,6 +97,8 @@
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="1ª"
+            android:textAlignment="center"
             android:inputType="numberDecimal" />
 
         <EditText
@@ -105,6 +107,8 @@
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="2ª"
+            android:textAlignment="center"
             android:inputType="numberDecimal" />
 
         <EditText
@@ -113,6 +117,8 @@
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="3ª"
+            android:textAlignment="center"
             android:inputType="numberDecimal" />
 
         <EditText
@@ -121,27 +127,29 @@
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="4ª"
+            android:textAlignment="center"
             android:inputType="numberDecimal" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnMedia"
-        android:layout_marginTop="5dp"
+        android:id="@+id/btnCalculo"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calcular" />
+        android:layout_marginTop="25dp"
+        android:text="Calcular"
+        android:textSize="25sp" />
 
     <EditText
-        android:id="@+id/txtResultado"
-        android:layout_width="120dp"
-        android:layout_marginTop="5dp"
-        android:layout_gravity="center"
+        android:id="@+id/dataResultado"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
         android:ems="10"
+        android:inputType="numberDecimal"
         android:textAlignment="center"
-        android:hint="Resultado"
-        android:textSize="25sp"
-        android:inputType="numberDecimal" />
+        android:textSize="25sp" />
 
 </LinearLayout>
