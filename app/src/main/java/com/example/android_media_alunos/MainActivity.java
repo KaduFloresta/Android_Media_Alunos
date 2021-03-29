@@ -2,61 +2,40 @@ package com.example.android_media_alunos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    TextView inputNota1, inputNota2, inputNota3, inputNota4;
-    TextView txtResultado;
-    private String nome, dtNascimento, endereco, resultado;
+    TextView nota1, nota2, nota3, nota4;
+    TextView resultado;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Recebe os "args" em formato String pela chave
-        Bundle args = getIntent().getExtras();
-        nome = args.getString("nome");
-        dtNascimento = args.getString("dtNascimento");
-        endereco = args.getString("endereco");
-        resultado = args.getString("resultado");
-
-        // Botões para fazer o calculo
-        Button btnAdd = (Button) findViewById(R.id.btnMedia);
-        btnAdd.setOnClickListener(onClickCalculo());
+        Button btnCalculo = (Button) findViewById(R.id.btnCalculo);
+        btnCalculo.setOnClickListener(onClickCalcular());
     }
 
-    // Evento do botão SOMAR
-    private View.OnClickListener onClickCalculo() {
+    // Evento do botão para INSERIR dados e CALCULAR as médias
+    private View.OnClickListener onClickCalcular() {
         return new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                inputNota1 = (TextView) findViewById(R.id.inputNota1);
-                float Nota1 = Float.parseFloat(inputNota1.getText().toString());
-                inputNota2 = (TextView) findViewById(R.id.inputNota2);
-                float Nota2 = Float.parseFloat(inputNota2.getText().toString());
-                inputNota3 = (TextView) findViewById(R.id.inputNota3);
-                float Nota3 = Float.parseFloat(inputNota3.getText().toString());
-                inputNota4 = (TextView) findViewById(R.id.inputNota4);
-                float Nota4 = Float.parseFloat(inputNota4.getText().toString());
-                txtResultado = (TextView) findViewById(R.id.txtResultado);
-                txtResultado.setText(String.valueOf((Nota1 + Nota2 + Nota3 + Nota4) / 4));
-
-                Intent myIntent = new Intent(MainActivity.this, DataActivity.class);
-                startActivityForResult(myIntent, 2);
-
-                Bundle params = new Bundle();
-                params.putString("nome", nome);
-                params.putString("email", dtNascimento);
-                params.putString("usuario", endereco);
-                params.putString("senha", resultado);
-
-                myIntent.putExtras(params);
-                startActivity(myIntent);
+                nota1 = (TextView) findViewById(R.id.inputNota1);
+                nota2 = (TextView) findViewById(R.id.inputNota2);
+                nota3 = (TextView) findViewById(R.id.inputNota3);
+                nota4 = (TextView) findViewById(R.id.inputNota4);
+                float tNota1 = Float.parseFloat(nota1.getText().toString());
+                float tNota2 = Float.parseFloat(nota2.getText().toString());
+                float tNota3 = Float.parseFloat(nota3.getText().toString());
+                float tNota4 = Float.parseFloat(nota4.getText().toString());
+                resultado = (TextView) findViewById(R.id.dataResultado);
+                resultado.setText(String.valueOf((tNota1 + tNota2 + tNota3 + tNota4) / 4));
             }
         };
     }
