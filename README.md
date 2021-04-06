@@ -24,7 +24,7 @@
 
 ---
 
-# Android_Media_Alunos
+# Android Média Alunos
 
 ## Instruções
 Criar uma aplicação Android que contenha uma atividade que faça a entrada dos dados para o cadastro de um aluno.
@@ -36,3 +36,6 @@ Criar uma aplicação Android que contenha uma atividade que faça a entrada dos
 - c) Um botão deve ser inserido no rodapé com o nome de “Calcular”. O mesmo, quando pressionado efetuará o cálculo da média das notas fornecidas.
 
 ---
+
+ # Prints do Aplicativo 
+ <img src="https://github.com/KaduFloresta/Android_Media_Alunos/blob/master/app/src/main/res/drawable/print.png"/><img src="https://github.com/KaduFloresta/Android_Media_Alunos/blob/master/app/src/main/res/drawable/print2.png"/>
