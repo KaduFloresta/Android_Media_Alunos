@@ -52,19 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 float tNota2 = Float.parseFloat(nota2.getText().toString());
                 float tNota3 = Float.parseFloat(nota3.getText().toString());
                 float tNota4 = Float.parseFloat(nota4.getText().toString());
-                resultado = (TextView) findViewById(R.id.dataResultado);
-                resultado.setText(String.valueOf((tNota1 + tNota2 + tNota3 + tNota4) / 4));
-
-//                String str = resultado.getText().toString();
-//                int value = Integer.parseInt(str);
-//
-//                if (value < 5) {
-//                    alert("REPROVADO!!!");
-//                } else if ((value >= 5) || (value < 7)) {
-//                    alert("RECUPERAÇÃO!!!");
-//                } else {
-//                    alert("APROVADO!!!");
-//                }
+                float resultado = (tNota1 + tNota2 + tNota3 + tNota4) / 4;
 
                 Intent myIntent = new Intent(MainActivity.this, DataActivity.class);
                 startActivityForResult(myIntent, 2);
@@ -73,15 +61,11 @@ public class MainActivity extends AppCompatActivity {
                 params.putString("nome", nome);
                 params.putString("nascimento", dtNascimento);
                 params.putString("endereco", endereco);
-//                params.putString("resultado", String.valueOf(resultado));
+                params.putString("resultado", String.valueOf(resultado));
 
                 myIntent.putExtras(params);
                 startActivity(myIntent);
             }
         };
-    }
-
-    private void alert(String s) {
-        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
     }
 }
