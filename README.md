@@ -38,4 +38,4 @@ Criar uma aplicação Android que contenha uma atividade que faça a entrada dos
 ---
 
  # Prints do Aplicativo 
- <img src="https://github.com/KaduFloresta/Android_Media_Alunos/blob/master/app/src/main/res/drawable/print.png"/><img src="https://github.com/KaduFloresta/Android_Media_Alunos/blob/master/app/src/main/res/drawable/print2.png"/>
+ <img src="https://github.com/KaduFloresta/Android_Media_Alunos/blob/master/app/src/main/res/drawable-v24/print.png"/><img src="https://github.com/KaduFloresta/Android_Media_Alunos/blob/master/app/src/main/res/drawable-v24/print2.png"/>
