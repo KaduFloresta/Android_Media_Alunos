@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Media dos Alunos</string>
+    <string name="titulo">Dados do Aluno</string>
 </resources>
